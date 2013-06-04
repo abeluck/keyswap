@@ -1,4 +1,4 @@
-package com.lookout.keymaster.fragments;
+package com.lookout.keyswap.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import com.lookout.keymaster.gpg.GPGFactory;
-import com.lookout.keymaster.R;
+import com.lookout.keyswap.gpg.GPGFactory;
+import com.lookout.keyswap.R;
 
 public class PublicKeysFragment extends Fragment {
     SimpleAdapter adapter;

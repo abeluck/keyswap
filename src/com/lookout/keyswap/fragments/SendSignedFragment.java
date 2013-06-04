@@ -1,4 +1,4 @@
-package com.lookout.keymaster.fragments;
+package com.lookout.keyswap.fragments;
 
 import android.app.Fragment;
 import android.os.AsyncTask;
@@ -9,10 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import com.lookout.keymaster.R;
-import com.lookout.keymaster.gpg.GPGCli;
-import com.lookout.keymaster.gpg.GPGFactory;
-import com.lookout.keymaster.gpg.GPGKey;
+import com.lookout.keyswap.R;
+import com.lookout.keyswap.gpg.GPGCli;
+import com.lookout.keyswap.gpg.GPGFactory;
+import com.lookout.keyswap.gpg.GPGKey;
 
 /**
  * Created with IntelliJ IDEA.

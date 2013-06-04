@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.lookout.keymaster"
+          package="com.lookout.keyswap"
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="15"/>
@@ -30,7 +30,7 @@
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="application/vnd.com.lookout.keymaster.beam"/>
+                <data android:mimeType="application/vnd.com.lookout.keyswap.beam"/>
             </intent-filter>
         </activity>
     </application>

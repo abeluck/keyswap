@@ -1,4 +1,4 @@
-package com.lookout.keymaster;
+package com.lookout.keyswap;
 
 import android.content.Context;
 import android.view.LayoutInflater;

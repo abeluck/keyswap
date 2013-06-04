@@ -1,4 +1,4 @@
-package com.lookout.keymaster;
+package com.lookout.keyswap;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -17,10 +17,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.lookout.keymaster.fragments.*;
-import com.lookout.keymaster.gpg.GPGCli;
-import com.lookout.keymaster.gpg.GPGFactory;
-import com.lookout.keymaster.gpg.KeyringSyncManager;
+import com.lookout.keyswap.fragments.*;
+import com.lookout.keyswap.gpg.GPGCli;
+import com.lookout.keyswap.gpg.GPGFactory;
+import com.lookout.keyswap.gpg.KeyringSyncManager;
 
 public class MainActivity extends Activity  implements NfcAdapter.CreateNdefMessageCallback {
 
@@ -149,10 +149,10 @@ public class MainActivity extends Activity  implements NfcAdapter.CreateNdefMess
     @Override
     public NdefMessage createNdefMessage(NfcEvent event){
         NdefMessage msg = new NdefMessage(
-                NdefRecord.createMime("application/vnd.com.lookout.keymaster.beam", GPGFactory.getPublicKey().getBytes()),
-                NdefRecord.createMime("application/vnd.com.lookout.keymaster.beam", GPGFactory.getPublicKeyId().getBytes()),
-                NdefRecord.createMime("application/vnd.com.lookout.keymaster.beam", GPGFactory.getSignedKey().getBytes()),
-                NdefRecord.createApplicationRecord("com.lookout.keymaster"));
+                NdefRecord.createMime("application/vnd.com.lookout.keyswap.beam", GPGFactory.getPublicKey().getBytes()),
+                NdefRecord.createMime("application/vnd.com.lookout.keyswap.beam", GPGFactory.getPublicKeyId().getBytes()),
+                NdefRecord.createMime("application/vnd.com.lookout.keyswap.beam", GPGFactory.getSignedKey().getBytes()),
+                NdefRecord.createApplicationRecord("com.lookout.keyswap"));
 
         return msg;
     }

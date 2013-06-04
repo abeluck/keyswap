@@ -1,11 +1,9 @@
-package com.lookout.keymaster.gpg;
+package com.lookout.keyswap.gpg;
 
-import android.os.Environment;
 import android.util.Log;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.regex.Pattern;

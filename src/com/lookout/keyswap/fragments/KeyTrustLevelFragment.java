@@ -1,4 +1,4 @@
-package com.lookout.keymaster.fragments;
+package com.lookout.keyswap.fragments;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
-import com.lookout.keymaster.gpg.GPGFactory;
-import com.lookout.keymaster.R;
+import com.lookout.keyswap.gpg.GPGFactory;
+import com.lookout.keyswap.R;
 
 public class KeyTrustLevelFragment extends Fragment {
     public KeyTrustLevelFragment() {

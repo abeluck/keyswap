@@ -1,6 +1,4 @@
-package com.lookout.keymaster.gpg;
-
-import android.content.Context;
+package com.lookout.keyswap.gpg;
 
 import java.util.List;
 
