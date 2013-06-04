@@ -63,7 +63,7 @@ public class ExchangeFragment extends Fragment {
         }
 
         protected Void doInBackground(Void... voids) {
-            Log.i("LookoutPG", "Setting key to " + keyId);
+            Log.i("KeySwap", "Setting key to " + keyId);
             GPGFactory.setPublicKey(keyId);
 
             return null;

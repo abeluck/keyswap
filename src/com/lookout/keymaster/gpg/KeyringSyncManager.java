@@ -10,7 +10,7 @@ import java.io.File;
 public class KeyringSyncManager {
 
     private static KeyringSyncManager instance;
-    private static final String KEY_STORE_DIRECTORY = "/sdcard/Keymaster/";
+    private static final String KEY_STORE_DIRECTORY = "/sdcard/KeySwap/";
 
     private String storagePath;
 
@@ -27,7 +27,7 @@ public class KeyringSyncManager {
 
         this.storagePath = file.getAbsolutePath();
 
-        Log.i("LookoutPG", "KeyringSyncManager initialized");
+        Log.i("KeySwap", "KeyringSyncManager initialized");
     }
 
     public void sync(Context context) {

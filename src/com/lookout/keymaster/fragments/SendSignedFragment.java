@@ -34,7 +34,7 @@ public class SendSignedFragment extends Fragment {
 
         rootView = inflater.inflate(R.layout.fragment_send_signed, container, false);
 
-        Log.i("LookoutPG", "Siginging " + GPGFactory.getReceivedKeyId());
+        Log.i("KeySwap", "Siginging " + GPGFactory.getReceivedKeyId());
         new SendingKeyTask2(GPGFactory.getReceivedKey(), GPGFactory.getReceivedKeyId()).execute();
 
         getActivity().setTitle("Key Exchange");

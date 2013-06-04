@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Keymaster</string>
+    <string name="app_name">KeySwap</string>
     <string name="exchange">Key Exchange</string>
     <string name="exchange_select_prompt">Select a keypair for this exchange:</string>
     <string name="exchange_select_default">Use by default for future key exchanges.</string>
